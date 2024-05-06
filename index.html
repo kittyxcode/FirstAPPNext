@@ -15,7 +15,15 @@
       function Header(){
           return <h1>Funciona</h1>;
       }
-      
+      function HomePage(){
+        return(
+            <div>
+                {/*componente anidado*/}
+            <Header/>
+            </div>
+        )
+      }
+
       const root = ReactDOM.createRoot(app);
       root.render(<Header />);
     </script>
