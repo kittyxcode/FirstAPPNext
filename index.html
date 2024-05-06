@@ -12,11 +12,10 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/jsx">
       const app = document.getElementById('app');
-      function Header(props) {
-        console.log("hola");
-        console.log(props); // { title: "React" }
-        return <h1>Develop. Preview. Ship.</h1>;
+      function Header({ title }) {
+        return <h1>{`Cool ${title}`}</h1>;
       }
+
       function HomePage() {
         return (
           <div>
@@ -26,7 +25,7 @@
       }
 
       const root = ReactDOM.createRoot(app);
-      root.render(<Header />);
+      root.render(<HomePage />);
     </script>
   </body>
 </html>
